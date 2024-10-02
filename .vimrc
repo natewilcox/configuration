@@ -1,0 +1,15 @@
+syntax on
+
+set number
+set relativenumber
+
+set ai
+set si
+
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
+set laststatus=2
+
+set splitbelow
