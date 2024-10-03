@@ -1,5 +1,7 @@
 #!/bin/bash
 
-ln -s ~/configuration/.vimrc ~/.vimrc
+rm -f ~/.vimrc
+
+ln -s $(pwd)/.vimrc ~/.vimrc
 
 exit 0
