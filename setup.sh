@@ -7,7 +7,7 @@ ln -s $(pwd)/.vimrc ~/.vimrc
 
 mkdir -p ~/.vim/pack/plugins/start
 
-sudo apt install vim git nodejs npm openjdk-21-jdk -y
+sudo apt install vim nodejs npm openjdk-21-jdk -y
 sudo npm install -g typescript-language-server typescript
 
 git clone https://github.com/kien/ctrlp.vim.git ~/.vim/pack/plugins/start/ctrlp 
