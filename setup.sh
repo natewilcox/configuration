@@ -16,5 +16,6 @@ git clone https://github.com/jiangmiao/auto-pairs.git ~/.vim/pack/plugins/start/
 
 git config --global user.email "natewilcox@gmail.com"
 git config --global user.name "Nathan Wilcox"
+git config --global credential.helper store
 
 exit 0
