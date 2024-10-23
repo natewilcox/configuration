@@ -5,8 +5,10 @@ rm -rf ~/.vim/pack
 
 ln -s $(pwd)/.vimrc ~/.vimrc
 
+mkdir -p ~/Projects
 mkdir -p ~/.vim/pack/plugins/start
 
+sudo apt update -y && sudo apt upgrade -y
 sudo apt install vim nodejs npm openjdk-21-jdk -y
 sudo npm install -g typescript-language-server typescript
 

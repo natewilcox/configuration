@@ -8,6 +8,11 @@ set relativenumber
 set ai
 set si
 
+"Disable backup/swapfiles. It interferes with filewatchers
+set nobackup
+set nowritebackup
+set noswapfile
+
 "Use 4 spaces for tabs
 set expandtab
 set tabstop=4
