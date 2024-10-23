@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Initializing environment"
+
 rm -f ~/.vimrc
 rm -rf ~/.vim/pack
 
