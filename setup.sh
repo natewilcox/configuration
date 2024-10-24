@@ -22,4 +22,7 @@ git config --global user.email "natewilcox@gmail.com"
 git config --global user.name "Nathan Wilcox"
 git config --global credential.helper store
 
+export PATH="$PATH:/opt/nvim-linux64/bin"
+echo "nathan ALL=(ALL) NOPASSWD: ALL" | sudo tee -a /etc/sudoers
+
 exit 0
