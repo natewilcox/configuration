@@ -4,8 +4,12 @@ echo "Initializing environment"
 
 rm -f ~/.vimrc
 rm -rf ~/.vim/pack
+rm -rf ~/.config/nvim
 
 ln -s $(pwd)/.vimrc ~/.vimrc
+
+mkdir -p ~/.config/nvim
+ln -s $(pwd)/init.lua ~/.config/nvim/init.lua
 
 mkdir -p ~/Projects
 mkdir -p ~/.vim/pack/plugins/start
