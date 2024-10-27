@@ -7,9 +7,7 @@ rm -rf ~/.vim/pack
 rm -rf ~/.config/nvim
 
 ln -s $(pwd)/.vimrc ~/.vimrc
-
-mkdir -p ~/.config/nvim
-ln -s $(pwd)/init.lua ~/.config/nvim/init.lua
+ln -sf $(pwd)/nvim ~/.config/nvim
 
 mkdir -p ~/Projects
 mkdir -p ~/.vim/pack/plugins/start
@@ -26,6 +24,13 @@ git config --global user.email "natewilcox@gmail.com"
 git config --global user.name "Nathan Wilcox"
 git config --global credential.helper store
 
-echo "nathan ALL=(ALL) NOPASSWD: ALL" | sudo tee -a /etc/sudoers
+sudo_cmd="nathan ALL=(ALL) NOPASSWD: ALL"
+sudo grep -qxF "$sudo_cmd" /ect/sudoers || echo "$sudo_cmd" | sudo tee -a /etc/sudoers  
+
+wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraCode.zip \
+    && cd ~/.local/share/fonts \
+    && unzip -o FiraCode.zip \
+    && rm -rf FiraCode.zip \
+    && fc-cache -fv
 
 exit 0
