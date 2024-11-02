@@ -13,7 +13,7 @@ return {
             require('telescope').setup({
                 defaults = {
                     file_ignore_patterns = {
-                        "node_modules", "dist", "build"
+                        "node_modules", "dist", "build", "*.class", "target"
                     }
                 }
             })

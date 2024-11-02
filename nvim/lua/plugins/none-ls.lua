@@ -10,6 +10,9 @@ return {
             sources = {
                 null_ls.builtins.formatting.stylua,
                 null_ls.builtins.formatting.prettier,
+                null_ls.builtins.formatting.tidy.with({
+                    args = {"-xml", "-i", "--quiet"}
+                }),
                 -- null_ls.builtins.diagnostics.eslint_d
                 -- null_ls.builtins.completion.spell,
                 require("none-ls.diagnostics.eslint"), -- requires none-ls-extras.nvim
